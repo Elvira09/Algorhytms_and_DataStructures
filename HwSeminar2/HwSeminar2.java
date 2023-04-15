@@ -1,3 +1,4 @@
+package HwSeminar2;
 import java.util.Random;
 
 // Реализовать алгоритм пирамидальной сортировки (сортировка кучей).
@@ -7,6 +8,7 @@ public class HwSeminar2 {
     public static void main(String[] args) {
         int[] array = fillingArrayRandomNumbers(10, 12, 356); 
         arrayPrintLine(array);
+        System.out.println();
         heapSort(array);
         arrayPrintLine(array);
 
@@ -52,8 +54,8 @@ public class HwSeminar2 {
     public static int [] fillingArrayRandomNumbers(int length, int min, int max){
         int[] array = new int [length]; 
         Random random = new Random();
-        for (int index = 0; index < array.length; index++) {
-            array[index] = random.nextInt(max - min) + min;
+        for (int i = 0; i < array.length; i++) {
+            array[i] = random.nextInt(max - min) + min;
         }
         return array;
     }
