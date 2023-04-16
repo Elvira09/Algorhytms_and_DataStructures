@@ -1,4 +1,4 @@
-package HwSeminar2;
+package HW.HwSeminar2;
 import java.util.Random;
 
 // Реализовать алгоритм пирамидальной сортировки (сортировка кучей).
