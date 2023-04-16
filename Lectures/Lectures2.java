@@ -14,6 +14,30 @@ public class Lectures2 {
         bubbleSort(array);
         HwSeminar2.arrayPrintLine(array);
 
+        System.out.println("Пузырьковая выбором");
+        selectionSort(array);
+        HwSeminar2.arrayPrintLine(array);
+
+        System.out.println("Сортировка вставками");
+        insertionSort(array);
+        HwSeminar2.arrayPrintLine(array);
+
+        System.out.println("Поиск");
+        findIndex(67, array);
+        HwSeminar2.arrayPrintLine(array);
+
+        System.out.println("Бинарный поиск");
+        binarySearch(67, array, 8, 879);
+        HwSeminar2.arrayPrintLine(array);
+
+        System.out.println("Быстрая сортировка");
+        quickSort(array, 2, 9);
+        HwSeminar2.arrayPrintLine(array);
+
+        System.out.println("Пирамидальная сортировка (сортировка кучей)");
+        heapSort(array);
+        HwSeminar2.arrayPrintLine(array);
+
     }
 
     // СОРТИРОВКА ПУЗЫРЬКОМ 
@@ -185,10 +209,5 @@ public class Lectures2 {
             heapify(array, heapSize, largest);
         }
     }
-
-     
-
-
-
 
 }
